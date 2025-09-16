@@ -16,26 +16,20 @@ using System.Windows.Shapes;
 namespace Prog6212___POE.Pages
 {
     /// <summary>
-    /// Interaction logic for HomePage.xaml
+    /// Interaction logic for CoordinatorDashboard.xaml
     /// </summary>
-    public partial class HomePage : Page
+    public partial class CoordinatorDashboard : Page
     {
         private Frame _mainFrame;
-
-        public HomePage(Frame mainFrame)
+        public CoordinatorDashboard(Frame mainFrame)
         {
             InitializeComponent();
             _mainFrame = mainFrame;
-        }
 
-        private void LecturerBtn_Click(object sender, System.Windows.RoutedEventArgs e)
-        {
-            _mainFrame.Navigate(new LecturerDashboard(_mainFrame));
         }
-
-        private void CoordinatorBtn_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void Back_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            _mainFrame.Navigate(new CoordinatorDashboard(_mainFrame));
+            _mainFrame.Navigate(new HomePage(_mainFrame));
         }
     }
 }
