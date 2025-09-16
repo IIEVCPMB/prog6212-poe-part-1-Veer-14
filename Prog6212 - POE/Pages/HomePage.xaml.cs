@@ -37,5 +37,19 @@ namespace Prog6212___POE.Pages
         {
             _mainFrame.Navigate(new CoordinatorDashboard(_mainFrame));
         }
+
+        private void ManagerBtn_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+            _mainFrame.Navigate(new ManagerDashboard(_mainFrame));
+        }
+        private void RegisterBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService?.Navigate(new Register(_mainFrame));
+        }
+        private void LoginBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService?.Navigate(new Login(_mainFrame));
+        }
     }
 }

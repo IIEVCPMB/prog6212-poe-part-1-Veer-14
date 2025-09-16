@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|c:\\users\\tasve\\source\\repos\\prog6212-poe-part-1-veer-14\\prog6212 - poe\\pages\\managerdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\managerdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\prog6212 - poe\\pages\\newclaim.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\newclaim.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|c:\\users\\tasve\\source\\repos\\prog6212-poe-part-1-veer-14\\prog6212 - poe\\pages\\managerdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\managerdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\prog6212 - poe\\pages\\lecturerdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\lecturerdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|c:\\users\\tasve\\source\\repos\\prog6212-poe-part-1-veer-14\\prog6212 - poe\\pages\\coordinatordashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\coordinatordashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|c:\\users\\tasve\\source\\repos\\prog6212-poe-part-1-veer-14\\prog6212 - poe\\pages\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|c:\\users\\tasve\\source\\repos\\prog6212-poe-part-1-veer-14\\prog6212 - poe\\pages\\coordinatordashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\coordinatordashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\prog6212 - poe\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\prog6212 - poe\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\prog6212 - poe\\pages\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,28 +31,40 @@
       "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|c:\\users\\tasve\\source\\repos\\prog6212-poe-part-1-veer-14\\prog6212 - poe\\pages\\lecturerdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|c:\\users\\tasve\\source\\repos\\prog6212-poe-part-1-veer-14\\prog6212 - poe\\pages\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|c:\\users\\tasve\\source\\repos\\prog6212-poe-part-1-veer-14\\prog6212 - poe\\pages\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|c:\\users\\tasve\\source\\repos\\prog6212-poe-part-1-veer-14\\prog6212 - poe\\pages\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|c:\\users\\tasve\\source\\repos\\prog6212-poe-part-1-veer-14\\prog6212 - poe\\pages\\managerdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\managerdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\prog6212 - poe\\pages\\managerdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\managerdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\prog6212 - poe\\pages\\coordinatordashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\coordinatordashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\prog6212 - poe\\pages\\coordinatordashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\coordinatordashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\prog6212 - poe\\pages\\lecturerdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\lecturerdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\prog6212 - poe\\pages\\newclaim.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\newclaim.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\prog6212 - poe\\pages\\newclaim.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\newclaim.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\prog6212 - poe\\pages\\lecturerdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\pages\\lecturerdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\prog6212 - poe\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\prog6212 - poe\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{566BBC44-A1C9-44F9-8BAE-534F920AF37E}|Prog6212 - POE\\Prog6212 - POE.csproj|solutionrelative:prog6212 - poe\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -61,12 +77,168 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\Login.xaml.cs",
+              "RelativeToolTip": "Prog6212 - POE\\Pages\\Login.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T21:52:18.929Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "NewClaim.xaml",
+              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\NewClaim.xaml",
+              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\NewClaim.xaml",
+              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\NewClaim.xaml",
+              "RelativeToolTip": "Prog6212 - POE\\Pages\\NewClaim.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-16T21:20:09.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Register.xaml",
+              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\Register.xaml",
+              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\Register.xaml",
+              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\Register.xaml",
+              "RelativeToolTip": "Prog6212 - POE\\Pages\\Register.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-16T21:50:19.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomePage.xaml",
+              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\HomePage.xaml",
+              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\HomePage.xaml",
+              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\HomePage.xaml",
+              "RelativeToolTip": "Prog6212 - POE\\Pages\\HomePage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-16T21:00:30.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\HomePage.xaml.cs",
+              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\HomePage.xaml.cs",
+              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\HomePage.xaml.cs",
+              "RelativeToolTip": "Prog6212 - POE\\Pages\\HomePage.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T21:01:13.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Prog6212 - POE\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Prog6212 - POE\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T20:59:19.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Prog6212 - POE\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\MainWindow.xaml",
+              "RelativeToolTip": "Prog6212 - POE\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-16T13:53:41.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LecturerDashboard.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\LecturerDashboard.xaml.cs",
+              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\LecturerDashboard.xaml.cs",
+              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\LecturerDashboard.xaml.cs",
+              "RelativeToolTip": "Prog6212 - POE\\Pages\\LecturerDashboard.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T21:18:31.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\Login.xaml",
+              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\Login.xaml",
+              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\Login.xaml",
+              "RelativeToolTip": "Prog6212 - POE\\Pages\\Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-16T21:50:56.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Register.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\Register.xaml.cs",
+              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\Register.xaml.cs",
+              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\Register.xaml.cs",
+              "RelativeToolTip": "Prog6212 - POE\\Pages\\Register.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T21:51:41.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LecturerDashboard.xaml",
+              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\LecturerDashboard.xaml",
+              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\LecturerDashboard.xaml",
+              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\LecturerDashboard.xaml",
+              "RelativeToolTip": "Prog6212 - POE\\Pages\\LecturerDashboard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-16T21:17:44.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CoordinatorDashboard.xaml",
+              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\CoordinatorDashboard.xaml",
+              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\CoordinatorDashboard.xaml",
+              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\CoordinatorDashboard.xaml",
+              "RelativeToolTip": "Prog6212 - POE\\Pages\\CoordinatorDashboard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-16T21:39:34.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NewClaim.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\NewClaim.xaml.cs",
+              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\NewClaim.xaml.cs",
+              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\NewClaim.xaml.cs",
+              "RelativeToolTip": "Prog6212 - POE\\Pages\\NewClaim.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T21:20:34.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ManagerDashboard.xaml.cs",
               "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\ManagerDashboard.xaml.cs",
               "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\ManagerDashboard.xaml.cs",
@@ -79,19 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ManagerDashboard.xaml",
-              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\ManagerDashboard.xaml",
-              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\ManagerDashboard.xaml",
-              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\ManagerDashboard.xaml",
-              "RelativeToolTip": "Prog6212 - POE\\Pages\\ManagerDashboard.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-16T21:44:26.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "CoordinatorDashboard.xaml.cs",
               "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\CoordinatorDashboard.xaml.cs",
               "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\CoordinatorDashboard.xaml.cs",
@@ -99,115 +259,18 @@
               "RelativeToolTip": "Prog6212 - POE\\Pages\\CoordinatorDashboard.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T21:39:59.276Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CoordinatorDashboard.xaml",
-              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\CoordinatorDashboard.xaml",
-              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\CoordinatorDashboard.xaml",
-              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\CoordinatorDashboard.xaml",
-              "RelativeToolTip": "Prog6212 - POE\\Pages\\CoordinatorDashboard.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-16T21:39:34.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LecturerDashboard.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\LecturerDashboard.xaml.cs",
-              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\LecturerDashboard.xaml.cs",
-              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\LecturerDashboard.xaml.cs",
-              "RelativeToolTip": "Prog6212 - POE\\Pages\\LecturerDashboard.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T21:18:31.22Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LecturerDashboard.xaml",
-              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\LecturerDashboard.xaml",
-              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\LecturerDashboard.xaml",
-              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\LecturerDashboard.xaml",
-              "RelativeToolTip": "Prog6212 - POE\\Pages\\LecturerDashboard.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-16T21:17:44.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HomePage.xaml",
-              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\HomePage.xaml",
-              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\HomePage.xaml",
-              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\HomePage.xaml",
-              "RelativeToolTip": "Prog6212 - POE\\Pages\\HomePage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-16T21:00:30.207Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\HomePage.xaml.cs",
-              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\HomePage.xaml.cs",
-              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\HomePage.xaml.cs",
-              "RelativeToolTip": "Prog6212 - POE\\Pages\\HomePage.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T21:01:13.417Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "NewClaim.xaml",
-              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\NewClaim.xaml",
-              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\NewClaim.xaml",
-              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\NewClaim.xaml",
-              "RelativeToolTip": "Prog6212 - POE\\Pages\\NewClaim.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-16T21:20:09.457Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "NewClaim.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\NewClaim.xaml.cs",
-              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\NewClaim.xaml.cs",
-              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\NewClaim.xaml.cs",
-              "RelativeToolTip": "Prog6212 - POE\\Pages\\NewClaim.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T21:20:34.912Z"
+              "WhenOpened": "2025-09-16T21:39:59.276Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Prog6212 - POE\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Prog6212 - POE\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T20:59:19.555Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Prog6212 - POE\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\MainWindow.xaml",
-              "RelativeToolTip": "Prog6212 - POE\\MainWindow.xaml",
+              "Title": "ManagerDashboard.xaml",
+              "DocumentMoniker": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\ManagerDashboard.xaml",
+              "RelativeDocumentMoniker": "Prog6212 - POE\\Pages\\ManagerDashboard.xaml",
+              "ToolTip": "C:\\Users\\tasve\\source\\repos\\prog6212-poe-part-1-Veer-14\\Prog6212 - POE\\Pages\\ManagerDashboard.xaml",
+              "RelativeToolTip": "Prog6212 - POE\\Pages\\ManagerDashboard.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-16T13:53:41.004Z"
+              "WhenOpened": "2025-09-16T21:44:26.247Z"
             }
           ]
         }

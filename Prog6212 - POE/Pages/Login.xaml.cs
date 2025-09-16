@@ -1,5 +1,4 @@
-﻿using Prog6212___POE.Pages;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,24 +13,24 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Prog6212___POE
+namespace Prog6212___POE.Pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Login.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Login : Page
     {
-        public MainWindow()
+        private Frame _mainFrame;
+        public Login(Frame mainFrame)
         {
             InitializeComponent();
-
-            // Navigate to HomePage first
-            MainFrame.Navigate(new HomePage(MainFrame));
+            _mainFrame = mainFrame;
         }
 
-        private void MainFrame_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        private void Back_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-
+            _mainFrame.Navigate(new HomePage(_mainFrame));
         }
+
     }
 }
