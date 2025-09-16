@@ -1,0 +1,100 @@
+﻿<Page x:Class="Prog6212___POE.Pages.NewClaim"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Prog6212___POE.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="NewClaim">
+
+    <Grid>
+        <Grid.Resources>
+            <!-- Shared Futuristic Button Style -->
+            <Style x:Key="DashboardButtonStyle" TargetType="Button">
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Padding" Value="10,5"/>
+                <Setter Property="BorderBrush" Value="Black"/>
+                <Setter Property="BorderThickness" Value="2"/>
+                <Setter Property="Cursor" Value="Hand"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border"
+                                 BorderBrush="{TemplateBinding BorderBrush}"
+                                 BorderThickness="{TemplateBinding BorderThickness}"
+                                 Background="{TemplateBinding Background}"
+                                 CornerRadius="10"
+                                 Width="{TemplateBinding Width}"
+                                 Height="{TemplateBinding Height}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="border" Property="Background" Value="Black"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </Grid.Resources>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="500" Margin="20">
+
+                <!-- Back Button -->
+                <Button Content="← Back"
+                     Width="120" Height="40"
+                     Style="{StaticResource DashboardButtonStyle}"
+                     Click="Back_Click"
+                     HorizontalAlignment="Center"
+                     Margin="0,0,0,20"/>
+
+                <!-- Page Title -->
+                <TextBlock Text="Create New Claim"
+                        FontSize="36"
+                        FontWeight="Bold"
+                        Foreground="Black"
+                        HorizontalAlignment="Center"
+                        Margin="0,0,0,20"/>
+
+                <!-- Hours Worked Field -->
+                <StackPanel Margin="0,0,0,20">
+                    <TextBlock Text="Hours Worked" FontSize="16" FontWeight="SemiBold" Foreground="Black"/>
+                    <TextBox x:Name="HoursWorkedBox"
+                          FontSize="16"
+                          Padding="8"
+                          BorderBrush="Black"
+                          BorderThickness="2"
+                          Background="Transparent"
+                          Margin="0,5,0,15"/>
+                </StackPanel>
+
+                <!-- Optional Document Upload -->
+                <StackPanel Margin="0,0,0,20">
+                    <TextBlock Text="Upload Documents (Optional)" FontSize="16" FontWeight="SemiBold" Foreground="Black"/>
+                    <Button Content="Choose File"
+                         Width="200" Height="40"
+                         Style="{StaticResource DashboardButtonStyle}"
+                         HorizontalAlignment="Left"
+                         
+                         Margin="0,5,0,0"/>
+                    <TextBlock x:Name="SelectedFileText" FontSize="14" Foreground="Black" Margin="0,5,0,0"/>
+                </StackPanel>
+
+                <!-- Submit Button -->
+                <Button Content="Submit Claim"
+                     Width="220" Height="50"
+                     Style="{StaticResource DashboardButtonStyle}"
+                     HorizontalAlignment="Center"
+                     
+                     Margin="0,10,0,0"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

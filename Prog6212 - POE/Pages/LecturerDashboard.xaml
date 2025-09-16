@@ -1,0 +1,150 @@
+﻿<Page x:Class="Prog6212___POE.Pages.LecturerDashboard"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Prog6212___POE.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LecturerDashboard">
+
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Back Button -->
+            <RowDefinition Height="Auto"/>
+            <!-- Title -->
+            <RowDefinition Height="Auto"/>
+            <!-- Create Claim Button -->
+            <RowDefinition Height="*"/>
+            <!-- DataGrid -->
+        </Grid.RowDefinitions>
+
+        <Grid.Resources>
+            <!-- Futuristic Button Style -->
+            <Style x:Key="FuturisticButton" TargetType="Button">
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Padding" Value="10,5"/>
+                <Setter Property="BorderBrush" Value="Black"/>
+                <Setter Property="BorderThickness" Value="2"/>
+                <Setter Property="Cursor" Value="Hand"/>
+                <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="10"
+                                Width="{TemplateBinding Width}"
+                                Height="{TemplateBinding Height}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="border" Property="Background" Value="Black"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter TargetName="border" Property="Background" Value="Black"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </Grid.Resources>
+
+        <!-- Back Button -->
+        <Button Content="← Back"
+            Width="120" Height="40"
+            Style="{StaticResource FuturisticButton}"
+            Click="Back_Click"
+            HorizontalAlignment="Center"
+            Margin="0,0,0,20" Grid.Row="0"/>
+
+        <!-- Title -->
+        <TextBlock Text="Lecturer Dashboard"
+               FontSize="36"
+               FontWeight="Bold"
+               Foreground="Black"
+               HorizontalAlignment="Center"
+               Margin="0,0,0,20"
+               Grid.Row="1"/>
+
+        <!-- Create New Claim Button -->
+        <Button Content="+ Create New Claim"
+            Click="NewClaim_Click"
+            Width="220" Height="50"
+            Style="{StaticResource FuturisticButton}"
+            HorizontalAlignment="Center"
+            Margin="0,0,0,30"
+            Grid.Row="2"/>
+
+        <!-- Claims Table -->
+        <StackPanel Grid.Row="3" Margin="20" HorizontalAlignment="Center">
+            <Border CornerRadius="8" Background="Black" Padding="2">
+                <DataGrid x:Name="ClaimsDataGrid"
+              AutoGenerateColumns="False"
+              CanUserAddRows="False"
+              HeadersVisibility="Column"
+              RowBackground="#F4F4F4"
+              AlternatingRowBackground="#E0E0E0"
+              GridLinesVisibility="Horizontal"
+              BorderThickness="0"
+              Foreground="Black"
+              ColumnHeaderHeight="50"
+              RowHeight="40"
+              FontSize="14"
+              SelectionMode="Single"
+              HorizontalAlignment="Stretch"
+              Background="White">
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Claim ID" Binding="{Binding ClaimID}" Width="100"/>
+                        <DataGridTextColumn Header="Claim Month" Binding="{Binding ClaimMonth}" Width="120"/>
+                        <DataGridTextColumn Header="Hours Worked" Binding="{Binding HoursWorked}" Width="120"/>
+                        <DataGridTextColumn Header="Hourly Rate" Binding="{Binding HourlyRate}" Width="120"/>
+                        <DataGridTextColumn Header="Total Amount" Binding="{Binding Amount}" Width="120"/>
+                        <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="120"/>
+                        <DataGridTextColumn Header="Reviewed By" Binding="{Binding ReviewedBy}" Width="150"/>
+                        <DataGridTextColumn Header="Review Date" Binding="{Binding ReviewDate, StringFormat={}{0:dd MMM yyyy}}" Width="150"/>
+                        <DataGridTextColumn Header="Comments" Binding="{Binding ReviewComments}" Width="200"/>
+                    </DataGrid.Columns>
+
+                    <!-- Header Style -->
+                    <DataGrid.ColumnHeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="Black"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="FontSize" Value="16"/>
+                            <Setter Property="BorderThickness" Value="0"/>
+                            <Setter Property="Padding" Value="5"/>
+                        </Style>
+                    </DataGrid.ColumnHeaderStyle>
+
+                    <!-- Row Style -->
+                    <DataGrid.RowStyle>
+                        <Style TargetType="DataGridRow">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="FontSize" Value="14"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Black"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGrid.RowStyle>
+                </DataGrid>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>

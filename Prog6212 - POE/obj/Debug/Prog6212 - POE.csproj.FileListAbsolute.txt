@@ -1,0 +1,8 @@
+C:\Users\tasve\source\repos\prog6212-poe-part-1-Veer-14\Prog6212 - POE\obj\Debug\Prog6212 - POE.csproj.AssemblyReference.cache
+C:\Users\tasve\source\repos\prog6212-poe-part-1-Veer-14\Prog6212 - POE\obj\Debug\MainWindow.g.cs
+C:\Users\tasve\source\repos\prog6212-poe-part-1-Veer-14\Prog6212 - POE\obj\Debug\Pages\HomePage.g.cs
+C:\Users\tasve\source\repos\prog6212-poe-part-1-Veer-14\Prog6212 - POE\obj\Debug\Pages\LecturerDashboard.g.cs
+C:\Users\tasve\source\repos\prog6212-poe-part-1-Veer-14\Prog6212 - POE\obj\Debug\Pages\NewClaim.g.cs
+C:\Users\tasve\source\repos\prog6212-poe-part-1-Veer-14\Prog6212 - POE\obj\Debug\App.g.cs
+C:\Users\tasve\source\repos\prog6212-poe-part-1-Veer-14\Prog6212 - POE\obj\Debug\Prog6212 - POE_MarkupCompile.cache
+C:\Users\tasve\source\repos\prog6212-poe-part-1-Veer-14\Prog6212 - POE\obj\Debug\Prog6212 - POE_MarkupCompile.lref

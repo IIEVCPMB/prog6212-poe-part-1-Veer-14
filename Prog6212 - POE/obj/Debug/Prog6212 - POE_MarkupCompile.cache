@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\tasve\source\repos\prog6212-poe-part-1-Veer-14\Prog6212 - POE\obj\Debug\
+C:\Users\tasve\Source\Repos\prog6212-poe-part-1-Veer-14\Prog6212 - POE\obj\Debug\
 Prog6212___POE
 none
 false
 DEBUG;TRACE
-C:\Users\tasve\source\repos\prog6212-poe-part-1-Veer-14\Prog6212 - POE\App.xaml
-1219584333
+C:\Users\tasve\Source\Repos\prog6212-poe-part-1-Veer-14\Prog6212 - POE\App.xaml
+472032453
 
-6-502434485
+8-922681371
 13-1310406943
-MainWindow.xaml;
+MainWindow.xaml;Pages\HomePage.xaml;Pages\LecturerDashboard.xaml;Pages\NewClaim.xaml;
 
 True
 
