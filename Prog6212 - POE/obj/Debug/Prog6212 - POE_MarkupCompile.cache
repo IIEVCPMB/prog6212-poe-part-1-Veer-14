@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\tasve\Source\Repos\prog6212-poe-part-1-Veer-14\Prog6212 - POE\App.xaml
-472032453
+6-1468773546
 
-8-922681371
+10-1723895112
 13-1310406943
-MainWindow.xaml;Pages\HomePage.xaml;Pages\LecturerDashboard.xaml;Pages\NewClaim.xaml;
+MainWindow.xaml;Pages\CoordinatorDashboard.xaml;Pages\HomePage.xaml;Pages\LecturerDashboard.xaml;Pages\ManagerDashboard.xaml;Pages\NewClaim.xaml;
 
 True
 
