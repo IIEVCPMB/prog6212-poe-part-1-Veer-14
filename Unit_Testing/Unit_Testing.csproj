@@ -1,25 +1,35 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <IsPackable>false</IsPackable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<IsPackable>false</IsPackable>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="coverlet.collector" Version="6.0.2" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
-    <PackageReference Include="xunit" Version="2.9.2" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
-  </ItemGroup>
+	<ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\PROG6212 POE\PROG6212 POE.csproj" />
-  </ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+		<PackageReference Include="xunit" Version="2.9.2" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+		<PackageReference Include="coverlet.collector" Version="6.0.2" />
 
-  <ItemGroup>
-    <Using Include="Xunit" />
-  </ItemGroup>
+		
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+
+		
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.10" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
+	</ItemGroup>
+
+	<ItemGroup>
+		
+		<ProjectReference Include="..\PROG6212 POE\PROG6212 POE.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Xunit" />
+	</ItemGroup>
 
 </Project>

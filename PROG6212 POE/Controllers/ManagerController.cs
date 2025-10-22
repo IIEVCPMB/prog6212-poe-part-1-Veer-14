@@ -16,7 +16,7 @@ namespace PROG6212_POE.Controllers
             _context = context;
         }
 
-        
+
         public async Task<IActionResult> ManagerDashboard()
         {
             var claims = await _context.Claims
@@ -54,7 +54,7 @@ namespace PROG6212_POE.Controllers
             return RedirectToAction(nameof(ManagerDashboard));
         }
 
-        
+
         [HttpPost]
         public async Task<IActionResult> RejectClaim(int id)
         {
