@@ -6,6 +6,7 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace PROG6212_POE.Controllers
 {
@@ -23,9 +24,8 @@ namespace PROG6212_POE.Controllers
         // Lecturer Dashboard View
         public async Task<IActionResult> LecturerDashboard()
         {
-            // Include related reviews and attachments
+            // Include related attachments and user
             var claims = await _context.Claims
-                .Include(c => c.Reviews)
                 .Include(c => c.Attachments)
                 .Include(c => c.User)
                 .ToListAsync();
@@ -51,14 +51,14 @@ namespace PROG6212_POE.Controllers
             {
                 // Simulate logged-in user (replace with real authentication later)
                 claim.UserID = 1; // TEMPORARY for testing
-
                 claim.Status = ClaimStatus.Pending;
                 claim.DateSubmitted = DateTime.Now;
 
-                _context.Claims.Add(claim);
-                await _context.SaveChangesAsync();
+                // Initialize attachments collection if null
+                if (claim.Attachments == null)
+                    claim.Attachments = new List<ClaimAttachment>();
 
-                // Handle File Upload (if provided)
+                // Handle File Upload
                 if (FileUpload != null && FileUpload.Length > 0)
                 {
                     var allowedExtensions = new[] { ".pdf", ".docx", ".xlsx" };
@@ -81,17 +81,17 @@ namespace PROG6212_POE.Controllers
                         await FileUpload.CopyToAsync(stream);
                     }
 
-                    // Save to ClaimAttachment table
-                    var attachment = new ClaimAttachment
+                    // Add attachment to claim's navigation property
+                    claim.Attachments.Add(new ClaimAttachment
                     {
-                        ClaimID = claim.ClaimID,
                         FileName = FileUpload.FileName,
                         FilePath = $"/uploads/{uniqueFileName}"
-                    };
-
-                    _context.ClaimAttachments.Add(attachment);
-                    await _context.SaveChangesAsync();
+                    });
                 }
+
+                // Save claim (with attachments)
+                _context.Claims.Add(claim);
+                await _context.SaveChangesAsync();
 
                 TempData["Message"] = "Claim submitted successfully!";
                 return RedirectToAction("LecturerDashboard");

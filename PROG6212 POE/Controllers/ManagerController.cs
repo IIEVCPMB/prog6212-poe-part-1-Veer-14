@@ -16,13 +16,13 @@ namespace PROG6212_POE.Controllers
             _context = context;
         }
 
-        // Display all claims
+        
         public async Task<IActionResult> ManagerDashboard()
         {
             var claims = await _context.Claims
-                .Include(c => c.User) // Lecturer
+                .Include(c => c.User)
+                .Include(c => c.Attachments)
                 .Include(c => c.Reviews)
-                    .ThenInclude(r => r.User) // Reviewer
                 .OrderByDescending(c => c.DateSubmitted)
                 .ToListAsync();
 
@@ -32,16 +32,17 @@ namespace PROG6212_POE.Controllers
         [HttpPost]
         public async Task<IActionResult> ApproveClaim(int id)
         {
-            var claim = await _context.Claims.FindAsync(id);
-            if (claim == null) return NotFound();
+            var claim = await _context.Claims
+                .FirstOrDefaultAsync(c => c.ClaimID == id);
+
+            if (claim == null)
+                return NotFound();
 
             claim.Status = ClaimStatus.Approved;
 
-            int? userId = HttpContext.Session.GetInt32("UserID");
             var review = new Review
             {
                 ClaimID = claim.ClaimID,
-                UserID = userId ?? 0,
                 Decision = ReviewDecision.Approved,
                 Comment = "Approved by manager",
                 ReviewDate = System.DateTime.Now
@@ -53,21 +54,23 @@ namespace PROG6212_POE.Controllers
             return RedirectToAction(nameof(ManagerDashboard));
         }
 
+        
         [HttpPost]
-        public async Task<IActionResult> RejectClaim(int id, string? comment)
+        public async Task<IActionResult> RejectClaim(int id)
         {
-            var claim = await _context.Claims.FindAsync(id);
-            if (claim == null) return NotFound();
+            var claim = await _context.Claims
+                .FirstOrDefaultAsync(c => c.ClaimID == id);
+
+            if (claim == null)
+                return NotFound();
 
             claim.Status = ClaimStatus.Rejected;
 
-            int? userId = HttpContext.Session.GetInt32("UserID");
             var review = new Review
             {
                 ClaimID = claim.ClaimID,
-                UserID = userId ?? 0,
                 Decision = ReviewDecision.Rejected,
-                Comment = comment ?? "Rejected by manager",
+                Comment = "Rejected by manager",
                 ReviewDate = System.DateTime.Now
             };
 

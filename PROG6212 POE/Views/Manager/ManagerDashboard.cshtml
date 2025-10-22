@@ -23,41 +23,75 @@
                     <tr>
                         <th>Claim ID</th>
                         <th>Date Submitted</th>
-                        <th>Claim Month</th>
                         <th>Hours Worked</th>
                         <th>Hourly Rate</th>
                         <th>Total Amount</th>
                         <th>Status</th>
-                        <th>Date Reviewed</th>
-                        <th>Comments</th>
+                        <th>Attachment</th>
+                        <th>Notes</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var claim in Model)
+                    @if (Model != null && Model.Any())
                     {
-                        var latestReview = claim.Reviews?.OrderByDescending(r => r.ReviewDate).FirstOrDefault();
+                        foreach (var claim in Model)
+                        {
+                            <tr>
+                                <td>@claim.ClaimID</td>
+                                <td>@claim.DateSubmitted.ToString("dd MMM yyyy")</td>
+                                <td>@claim.HoursWorked</td>
+                                <td>@claim.HourlyRate</td>
+                                <td>@claim.TotalAmount.ToString("C")</td>
+                                <td>@claim.Status</td>
+
+                                <!-- Attachments -->
+                                <td>
+                                    @if (claim.Attachments != null && claim.Attachments.Any())
+                                    {
+                                        foreach (var file in claim.Attachments)
+                                        {
+                                            <a href="@file.FilePath" target="_blank" class="pdf-link">@file.FileName</a>
+                                            <br />
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">No attachment</span>
+                                    }
+                                </td>
+
+                                <!-- Notes -->
+                                <td>
+                                    @if (!string.IsNullOrWhiteSpace(claim.Notes))
+                                    {
+                                        <em>@claim.Notes</em>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">No notes</span>
+                                    }
+                                </td>
+
+                                <!-- Actions -->
+                                <td>
+                                    <form asp-action="ApproveClaim" method="post" style="display:inline">
+                                        <input type="hidden" name="id" value="@claim.ClaimID" />
+                                        <button type="submit" class="dashboard-btn btn-approve">Approve</button>
+                                    </form>
+
+                                    <form asp-action="RejectClaim" method="post" style="display:inline">
+                                        <input type="hidden" name="id" value="@claim.ClaimID" />
+                                        <button type="submit" class="dashboard-btn btn-reject">Reject</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
                         <tr>
-                            <td>@claim.ClaimID</td>
-                            <td>@claim.DateSubmitted.ToString("dd MMM yyyy")</td>
-                            <td>@claim.ClaimMonth</td>
-                            <td>@claim.HoursWorked</td>
-                            <td>@claim.HourlyRate</td>
-                            <td>@claim.TotalAmount</td>
-                            <td>@claim.Status</td>
-                            <td>@(latestReview?.ReviewDate.ToString("dd MMM yyyy") ?? "-")</td>
-                            <td>@(latestReview?.Comment ?? "-")</td>
-                            <td>
-                                <form asp-action="ApproveClaim" method="post" style="display:inline">
-                                    <input type="hidden" name="id" value="@claim.ClaimID" />
-                                    <button type="submit" class="dashboard-btn btn-approve">Approve</button>
-                                </form>
-                                <form asp-action="RejectClaim" method="post" style="display:inline">
-                                    <input type="hidden" name="id" value="@claim.ClaimID" />
-                                    <input type="text" name="comment" placeholder="Add comment" class="comment-box" />
-                                    <button type="submit" class="dashboard-btn btn-reject">Reject</button>
-                                </form>
-                            </td>
+                            <td colspan="9" class="text-muted">No claims available.</td>
                         </tr>
                     }
                 </tbody>
@@ -66,8 +100,7 @@
     </div>
 </div>
 
-<style type="text/css">
-    /* Animated gradient background */
+<style>
     body, html {
         height: 100%;
         margin: 0;
@@ -114,7 +147,6 @@
         font-size: 3rem;
         font-weight: 700;
         margin-bottom: 20px;
-        letter-spacing: 1px;
         color: #fff;
     }
 
@@ -124,7 +156,6 @@
         color: #ddd;
     }
 
-    /* Buttons */
     .dashboard-btn {
         font-size: 16px;
         font-weight: bold;
@@ -145,7 +176,6 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
 
-    /* Approve & Reject Hover Effects */
     .btn-approve:hover {
         color: limegreen !important;
         border-color: limegreen;
@@ -156,7 +186,6 @@
         border-color: red;
     }
 
-    /* Table Styling */
     table.table {
         width: 100%;
         border-collapse: separate;
@@ -187,14 +216,13 @@
         overflow: hidden;
     }
 
-    /* Comment Box */
-    .comment-box {
-        width: 150px;
-        padding: 5px;
-        border: 1px solid #000;
-        border-radius: 5px;
-        margin-right: 5px;
-        background-color: white;
-        color: black;
+    .pdf-link {
+        color: #0f0c29;
+        font-weight: bold;
+        text-decoration: underline;
     }
+
+        .pdf-link:hover {
+            color: #4b6cb7;
+        }
 </style>

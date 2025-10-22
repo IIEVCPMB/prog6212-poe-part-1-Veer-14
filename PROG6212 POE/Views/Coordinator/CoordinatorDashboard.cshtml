@@ -22,7 +22,6 @@
                 <thead class="table-dark">
                     <tr>
                         <th>Claim ID</th>
-                        <th>Claim Month</th>
                         <th>Date Submitted</th>
                         <th>Hours Worked</th>
                         <th>Hourly Rate</th>
@@ -38,11 +37,10 @@
                         {
                             <tr>
                                 <td>@claim.ClaimID</td>
-                                <td>@claim.ClaimMonth</td>
                                 <td>@claim.DateSubmitted.ToString("dd MMM yyyy")</td>
                                 <td>@claim.HoursWorked</td>
                                 <td>@claim.HourlyRate</td>
-                                <td>@claim.TotalAmount</td>
+                                <td>@claim.TotalAmount.ToString("C")</td>
                                 <td>@claim.Status</td>
                                 <td>
                                     <form asp-controller="Coordinator" asp-action="ApproveClaim" method="post" style="display:inline;">
@@ -52,7 +50,6 @@
 
                                     <form asp-controller="Coordinator" asp-action="RejectClaim" method="post" style="display:inline;">
                                         <input type="hidden" name="id" value="@claim.ClaimID" />
-                                        <input type="text" name="comment" placeholder="Add comment" class="comment-box" />
                                         <button type="submit" class="dashboard-btn btn-reject">Reject</button>
                                     </form>
                                 </td>
@@ -62,7 +59,7 @@
                     else
                     {
                         <tr>
-                            <td colspan="8" class="text-muted">No pending claims available.</td>
+                            <td colspan="7" class="text-muted">No pending claims available.</td>
                         </tr>
                     }
                 </tbody>
@@ -71,8 +68,7 @@
     </div>
 </div>
 
-<style type="text/css">
-    /* Animated gradient background */
+<style>
     body, html {
         height: 100%;
         margin: 0;
@@ -119,7 +115,6 @@
         font-size: 3rem;
         font-weight: 700;
         margin-bottom: 20px;
-        letter-spacing: 1px;
         color: #fff;
     }
 
@@ -149,7 +144,6 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
 
-    /* Hover effects for approve/reject */
     .btn-approve:hover {
         color: limegreen !important;
         border-color: limegreen;
@@ -188,15 +182,5 @@
     .rounded-table {
         border-radius: 15px;
         overflow: hidden;
-    }
-
-    .comment-box {
-        width: 150px;
-        padding: 5px;
-        border: 1px solid #000;
-        border-radius: 5px;
-        margin-right: 5px;
-        background-color: white;
-        color: black;
     }
 </style>
