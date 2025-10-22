@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container py-5">
+
+    <!-- TOP ROW: REGISTER (LEFT) & LOGIN (RIGHT) -->
+    <div class="d-flex justify-content-between align-items-center mb-5">
+        <!-- Register Button -->
+        <form asp-controller="Account" asp-action="Register" method="get">
+            <button type="submit" class="btn btn-outline-dark btn-lg d-flex align-items-center">
+                <span class="me-2 fs-5">👤</span>
+                <strong>Register</strong>
+            </button>
+        </form>
+
+        <!-- Login Button -->
+        <form asp-controller="Account" asp-action="Login" method="get">
+            <button type="submit" class="btn btn-outline-dark btn-lg d-flex align-items-center">
+                <span class="me-2 fs-5">🔑</span>
+                <strong>Login</strong>
+            </button>
+        </form>
+    </div>
+
+    <!-- CENTER CONTENT -->
+    <div class="text-center">
+        <h1 class="fw-bold mb-5 display-5">CMCS Dashboard</h1>
+
+        <!-- Lecturer Dashboard -->
+        <form asp-controller="Lecturer" asp-action="Dashboard" method="get" class="mb-3">
+            <button type="submit" class="btn btn-outline-dark btn-lg w-50 py-3 fw-bold">
+                Lecturer Dashboard
+            </button>
+        </form>
+
+        <!-- Coordinator Dashboard -->
+        <form asp-controller="Coordinator" asp-action="Dashboard" method="get" class="mb-3">
+            <button type="submit" class="btn btn-outline-dark btn-lg w-50 py-3 fw-bold">
+                Coordinator Dashboard
+            </button>
+        </form>
+
+        <!-- Manager Dashboard -->
+        <form asp-controller="Manager" asp-action="Dashboard" method="get">
+            <button type="submit" class="btn btn-outline-dark btn-lg w-50 py-3 fw-bold">
+                Manager Dashboard
+            </button>
+        </form>
+    </div>
+
+</div>
+
+<style>
+    /* Optional: mimic hover behavior from WPF */
+    button.btn-outline-dark:hover {
+        background-color: black !important;
+        color: white !important;
+        transition: 0.3s ease;
+    }
+</style>
+

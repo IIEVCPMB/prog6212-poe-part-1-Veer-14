@@ -1,0 +1,128 @@
+﻿@model IEnumerable<PROG6212_POE.Models.Claim>
+
+@{
+    ViewData["Title"] = "Manager Dashboard";
+}
+
+<div class="dashboard-container">
+    <a asp-controller="HomePage" asp-action="Index" class="dashboard-btn">← Back</a>
+
+    <h1>Manager Dashboard</h1>
+    <h2>All Claims Overview</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Claim ID</th>
+                <th>Lecturer</th>
+                <th>Date Submitted</th>
+                <th>Claim Month</th>
+                <th>Hours Worked</th>
+                <th>Hourly Rate</th>
+                <th>Total Amount</th>
+                <th>Status</th>
+                <th>Date Reviewed</th>
+                <th>Comments</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var claim in Model)
+            {
+                var latestReview = claim.Reviews?.OrderByDescending(r => r.ReviewDate).FirstOrDefault();
+                <tr>
+                    <td>@claim.ClaimID</td>
+                    <td>@($"{claim.User?.FirstName} {claim.User?.LastName}")</td>
+                    <td>@claim.DateSubmitted.ToString("dd MMM yyyy")</td>
+                    <td>@claim.ClaimMonth</td>
+                    <td>@claim.HoursWorked</td>
+                    <td>@claim.HourlyRate</td>
+                    <td>@claim.TotalAmount</td>
+                    <td>@claim.Status</td>
+                    <td>@(latestReview?.ReviewDate.ToString("dd MMM yyyy") ?? "-")</td>
+                    <td>@(latestReview?.Comment ?? "-")</td>
+                    <td>
+                        <form asp-action="ApproveClaim" method="post" style="display:inline">
+                            <input type="hidden" name="id" value="@claim.ClaimID" />
+                            <button type="submit" class="dashboard-btn btn-approve">Approve</button>
+                        </form>
+                        <form asp-action="RejectClaim" method="post" style="display:inline">
+                            <input type="hidden" name="id" value="@claim.ClaimID" />
+                            <input type="text" name="comment" placeholder="Add comment" class="comment-box" />
+                            <button type="submit" class="dashboard-btn btn-reject">Reject</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    body {
+        background: #fff;
+        font-family: 'Segoe UI';
+        color: black;
+        text-align: center;
+    }
+
+    .dashboard-container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .dashboard-btn {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 8px 15px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background: transparent;
+        color: black;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+        .dashboard-btn:hover {
+            background: black;
+            color: white;
+        }
+
+    .btn-approve:hover {
+        color: limegreen;
+    }
+
+    .btn-reject:hover {
+        color: red;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    th {
+        background: black;
+        color: white;
+    }
+
+    tr:hover {
+        background: black;
+        color: white;
+    }
+
+    .comment-box {
+        width: 150px;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-right: 5px;
+    }
+</style>

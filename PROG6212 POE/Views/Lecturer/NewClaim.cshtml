@@ -1,0 +1,82 @@
+﻿@model PROG6212_POE.Models.Claim
+
+@{
+    ViewData["Title"] = "Create New Claim";
+}
+
+<div class="container text-center mt-5">
+    <a asp-controller="Lecturer" asp-action="LecturerDashboard" class="btn btn-outline-dark mb-4">
+        ← Back
+    </a>
+
+    <h1 class="fw-bold mb-4">Create New Claim</h1>
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success">@TempData["Message"]</div>
+    }
+
+    <form asp-action="NewClaim" method="post" enctype="multipart/form-data" class="text-start mx-auto" style="max-width: 500px;">
+
+        <!-- Claim Month -->
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Claim Month</label>
+            <input asp-for="ClaimMonth" type="text" class="form-control border-2 border-dark" placeholder="e.g., October 2025" required />
+            <span asp-validation-for="ClaimMonth" class="text-danger"></span>
+        </div>
+
+        <!-- Hours Worked -->
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Hours Worked</label>
+            <input asp-for="HoursWorked" type="number" class="form-control border-2 border-dark" placeholder="Enter hours worked" required />
+            <span asp-validation-for="HoursWorked" class="text-danger"></span>
+        </div>
+
+        <!-- Hourly Rate -->
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Hourly Rate (R)</label>
+            <input asp-for="HourlyRate" type="number" class="form-control border-2 border-dark" placeholder="Enter hourly rate" required />
+            <span asp-validation-for="HourlyRate" class="text-danger"></span>
+        </div>
+
+        <!-- Notes -->
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Notes</label>
+            <textarea asp-for="Notes" class="form-control border-2 border-dark" placeholder="Enter additional notes (optional)"></textarea>
+        </div>
+
+        <!-- File Upload -->
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Upload Supporting Document (Optional)</label>
+            <input type="file" class="form-control border-2 border-dark" name="FileUpload" />
+            <small class="text-muted">Accepted: .pdf, .docx, .xlsx (Max 5MB)</small>
+        </div>
+
+        <!-- Submit -->
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-dark btn-lg px-4 py-2 fw-bold">Submit Claim</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<style>
+    .btn-outline-dark:hover {
+        background-color: black;
+        color: white;
+        transition: 0.3s;
+    }
+
+    input.form-control:focus,
+    textarea.form-control:focus {
+        box-shadow: 0 0 5px black;
+        border-color: black;
+    }
+</style>

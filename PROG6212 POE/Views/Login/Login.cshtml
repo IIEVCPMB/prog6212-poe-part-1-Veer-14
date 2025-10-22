@@ -1,0 +1,104 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "Login";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: white;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background: transparent;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background: transparent;
+            color: black;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+            .btn:hover {
+                background-color: black;
+                color: white;
+            }
+
+        .back-btn {
+            margin-bottom: 20px;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <a asp-controller="HomePage" asp-action="Index" class="btn back-btn">← Back</a>
+
+        <h1>Login</h1>
+
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="error-message">@TempData["ErrorMessage"]</div>
+        }
+
+        <form method="post" action="@Url.Action("LoginUser", "Login")">
+            <label>Email</label>
+            <input type="email" name="Email" required />
+
+            <label>Password</label>
+            <input type="password" name="Password" required />
+
+            <button type="submit" class="btn">Log In</button>
+        </form>
+    </div>
+</body>
+</html>
