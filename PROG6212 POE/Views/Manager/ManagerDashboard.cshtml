@@ -4,125 +4,197 @@
     ViewData["Title"] = "Manager Dashboard";
 }
 
-<div class="dashboard-container">
-    <a asp-controller="HomePage" asp-action="Index" class="dashboard-btn">← Back</a>
+<div class="home-container">
+    <div class="center-content">
 
-    <h1>Manager Dashboard</h1>
-    <h2>All Claims Overview</h2>
+        <!-- Back Button -->
+        <div class="text-center mb-4">
+            <a asp-controller="HomePage" asp-action="Index" class="dashboard-btn">← Back</a>
+        </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Claim ID</th>
-                <th>Lecturer</th>
-                <th>Date Submitted</th>
-                <th>Claim Month</th>
-                <th>Hours Worked</th>
-                <th>Hourly Rate</th>
-                <th>Total Amount</th>
-                <th>Status</th>
-                <th>Date Reviewed</th>
-                <th>Comments</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var claim in Model)
-            {
-                var latestReview = claim.Reviews?.OrderByDescending(r => r.ReviewDate).FirstOrDefault();
-                <tr>
-                    <td>@claim.ClaimID</td>
-                    <td>@($"{claim.User?.FirstName} {claim.User?.LastName}")</td>
-                    <td>@claim.DateSubmitted.ToString("dd MMM yyyy")</td>
-                    <td>@claim.ClaimMonth</td>
-                    <td>@claim.HoursWorked</td>
-                    <td>@claim.HourlyRate</td>
-                    <td>@claim.TotalAmount</td>
-                    <td>@claim.Status</td>
-                    <td>@(latestReview?.ReviewDate.ToString("dd MMM yyyy") ?? "-")</td>
-                    <td>@(latestReview?.Comment ?? "-")</td>
-                    <td>
-                        <form asp-action="ApproveClaim" method="post" style="display:inline">
-                            <input type="hidden" name="id" value="@claim.ClaimID" />
-                            <button type="submit" class="dashboard-btn btn-approve">Approve</button>
-                        </form>
-                        <form asp-action="RejectClaim" method="post" style="display:inline">
-                            <input type="hidden" name="id" value="@claim.ClaimID" />
-                            <input type="text" name="comment" placeholder="Add comment" class="comment-box" />
-                            <button type="submit" class="dashboard-btn btn-reject">Reject</button>
-                        </form>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+        <!-- Page Title -->
+        <h1 class="title">Manager Dashboard</h1>
+        <h2 class="subtitle">All Claims Overview</h2>
+
+        <!-- Claims Table -->
+        <div class="table-responsive">
+            <table class="table table-bordered text-center align-middle shadow rounded-table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Claim ID</th>
+                        <th>Date Submitted</th>
+                        <th>Claim Month</th>
+                        <th>Hours Worked</th>
+                        <th>Hourly Rate</th>
+                        <th>Total Amount</th>
+                        <th>Status</th>
+                        <th>Date Reviewed</th>
+                        <th>Comments</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var claim in Model)
+                    {
+                        var latestReview = claim.Reviews?.OrderByDescending(r => r.ReviewDate).FirstOrDefault();
+                        <tr>
+                            <td>@claim.ClaimID</td>
+                            <td>@claim.DateSubmitted.ToString("dd MMM yyyy")</td>
+                            <td>@claim.ClaimMonth</td>
+                            <td>@claim.HoursWorked</td>
+                            <td>@claim.HourlyRate</td>
+                            <td>@claim.TotalAmount</td>
+                            <td>@claim.Status</td>
+                            <td>@(latestReview?.ReviewDate.ToString("dd MMM yyyy") ?? "-")</td>
+                            <td>@(latestReview?.Comment ?? "-")</td>
+                            <td>
+                                <form asp-action="ApproveClaim" method="post" style="display:inline">
+                                    <input type="hidden" name="id" value="@claim.ClaimID" />
+                                    <button type="submit" class="dashboard-btn btn-approve">Approve</button>
+                                </form>
+                                <form asp-action="RejectClaim" method="post" style="display:inline">
+                                    <input type="hidden" name="id" value="@claim.ClaimID" />
+                                    <input type="text" name="comment" placeholder="Add comment" class="comment-box" />
+                                    <button type="submit" class="dashboard-btn btn-reject">Reject</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 
-<style>
-    body {
-        background: #fff;
-        font-family: 'Segoe UI';
-        color: black;
-        text-align: center;
+<style type="text/css">
+    /* Animated gradient background */
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        color: white;
+        background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #4b6cb7);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
     }
 
-    .dashboard-container {
+    @@keyframes gradientBG {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .home-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        padding: 50px 20px;
+    }
+
+    .center-content {
+        width: 100%;
         max-width: 1200px;
-        margin: 50px auto;
-        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 40px;
+        border-radius: 25px;
+        backdrop-filter: blur(12px);
+        box-shadow: 0 0 30px rgba(0,0,0,0.5);
     }
 
+    .title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        color: #fff;
+    }
+
+    .subtitle {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+        color: #ddd;
+    }
+
+    /* Buttons */
     .dashboard-btn {
         font-size: 16px;
         font-weight: bold;
-        padding: 8px 15px;
-        border: 2px solid black;
+        padding: 10px 20px;
+        border: 2px solid #fff;
         border-radius: 10px;
-        background: transparent;
+        background-color: white;
         color: black;
         cursor: pointer;
+        transition: all 0.3s ease;
         margin: 5px;
+        text-decoration: none;
+        display: inline-block;
     }
 
         .dashboard-btn:hover {
-            background: black;
-            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
 
+    /* Approve & Reject Hover Effects */
     .btn-approve:hover {
-        color: limegreen;
+        color: limegreen !important;
+        border-color: limegreen;
     }
 
     .btn-reject:hover {
-        color: red;
+        color: red !important;
+        border-color: red;
     }
 
-    table {
+    /* Table Styling */
+    table.table {
         width: 100%;
-        border-collapse: collapse;
+        border-collapse: separate;
+        border-spacing: 0;
         margin-top: 20px;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.9);
     }
 
-    th, td {
-        border: 1px solid black;
-        padding: 10px;
+        table.table th, table.table td {
+            padding: 12px;
+            font-size: 15px;
+        }
+
+    .table-dark {
+        background-color: rgba(0, 0, 0, 0.85);
+        color: #fff;
     }
 
-    th {
-        background: black;
-        color: white;
+    table.table tr:hover {
+        background-color: rgba(255,255,255,0.2);
+        color: black;
+        transition: 0.3s;
     }
 
-    tr:hover {
-        background: black;
-        color: white;
+    .rounded-table {
+        border-radius: 15px;
+        overflow: hidden;
     }
 
+    /* Comment Box */
     .comment-box {
         width: 150px;
         padding: 5px;
-        border: 1px solid black;
+        border: 1px solid #000;
         border-radius: 5px;
         margin-right: 5px;
+        background-color: white;
+        color: black;
     }
 </style>

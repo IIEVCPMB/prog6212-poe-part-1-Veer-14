@@ -108,20 +108,17 @@
     }
 
     @@keyframes gradientBG {
-        0%
+        0% {
+            background-position: 0% 50%;
+        }
 
-    {
-        background-position: 0% 50%;
-    }
+        50% {
+            background-position: 100% 50%;
+        }
 
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-
+        100% {
+            background-position: 0% 50%;
+        }
     }
 
     .home-container {
@@ -174,21 +171,21 @@
 
     table.table {
         width: 100%;
-        border-collapse: separate; /* Needed for rounded corners */
-        border-spacing: 0; /* Remove gaps */
+        border-collapse: separate;
+        border-spacing: 0;
         margin-top: 20px;
-        color: black; /* Table text color */
+        color: black;
     }
 
         table.table th, table.table td {
             padding: 12px;
             font-size: 15px;
-            color: black; /* Table text color */
         }
 
+    /* Updated table header color to white */
     .table-dark {
-        background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent header */
-        color: black;
+        background-color: rgba(0, 0, 0, 0.6); /* Darker background for contrast */
+        color: white; /* White text in header */
     }
 
     table.table tr:hover {
@@ -197,10 +194,9 @@
         transition: 0.3s;
     }
 
-    /* Rounded table corners */
     .rounded-table {
         border-radius: 15px;
-        overflow: hidden; /* Ensures corners are actually rounded */
+        overflow: hidden;
     }
 
     .btn-outline-dark {
@@ -216,3 +212,4 @@
             color: #0f0c29 !important;
         }
 </style>
+

@@ -84,20 +84,17 @@
     }
 
     @@keyframes gradientBG {
-        0%
+        0% {
+            background-position: 0% 50%;
+        }
 
-    {
-        background-position: 0% 50%;
-    }
+        50% {
+            background-position: 100% 50%;
+        }
 
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-
+        100% {
+            background-position: 0% 50%;
+        }
     }
 
     .home-container {
@@ -133,33 +130,43 @@
     }
 
     .dashboard-btn {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
-        padding: 12px 30px;
+        padding: 10px 20px;
         border: 2px solid #fff;
-        border-radius: 15px;
-        background-color: rgba(255, 255, 255, 0.1);
-        color: #fff;
+        border-radius: 10px;
+        background-color: white;
+        color: black;
         cursor: pointer;
         transition: all 0.3s ease;
-        margin: 10px 5px;
+        margin: 5px;
         text-decoration: none;
         display: inline-block;
     }
 
         .dashboard-btn:hover {
-            background-color: #fff;
-            color: #0f0c29;
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
 
+    /* Hover effects for approve/reject */
+    .btn-approve:hover {
+        color: limegreen !important;
+        border-color: limegreen;
+    }
+
+    .btn-reject:hover {
+        color: red !important;
+        border-color: red;
+    }
+
     table.table {
         width: 100%;
-        border-collapse: separate; /* Needed for rounded corners */
+        border-collapse: separate;
         border-spacing: 0;
         margin-top: 20px;
-        color: black; /* Table text color */
+        background-color: rgba(255,255,255,0.9);
+        color: black;
     }
 
         table.table th, table.table td {
@@ -167,39 +174,29 @@
             font-size: 15px;
         }
 
-    /* Table header stays white text */
     .table-dark {
         background-color: rgba(0,0,0,0.8);
         color: #fff;
     }
 
     table.table tr:hover {
-        background-color: rgba(255,255,255,0.1);
+        background-color: rgba(255,255,255,0.2);
         color: black;
         transition: 0.3s;
     }
 
-    /* Rounded table corners */
     .rounded-table {
         border-radius: 15px;
         overflow: hidden;
     }
 
-    .btn-approve:hover {
-        color: limegreen;
-    }
-
-    .btn-reject:hover {
-        color: red;
-    }
-
     .comment-box {
         width: 150px;
         padding: 5px;
-        border: 1px solid #fff;
+        border: 1px solid #000;
         border-radius: 5px;
         margin-right: 5px;
-        background-color: rgba(255,255,255,0.05);
-        color: #fff;
+        background-color: white;
+        color: black;
     }
 </style>
